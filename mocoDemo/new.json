@@ -1,0 +1,34 @@
+[
+  {
+    "description":"redirect to baidu",
+    "request":{
+      "uri":"/goToBAIDU",
+      "method":"get"
+    },
+    "redirectTo":"http://www.baidu.com"
+  },
+  {
+    "description":"redirect to self page",
+    "request":{
+      "uri":"/goToSelfPage",
+      "method":"get",
+      "queries":{
+        "username":"zhangsan",
+        "age":"18"
+      }
+    },
+    "redirectTo":"/redirectToSelf"
+  },
+  {
+    "description":"this is self page",
+    "request":{
+      "uri":"/redirectToSelf"
+    },
+    "response":{
+      "text":"this is self page"
+    }
+
+  }
+
+
+]

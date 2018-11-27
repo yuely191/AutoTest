@@ -1,0 +1,36 @@
+[
+  {
+    "description":"this is get request with cookies",
+    "request":{
+      "uri":"/getCookies",
+      "method":"get"
+    },
+    "response":{
+      "text":"this is a request with cookies",
+      "cookies":{
+        "login":"true"
+      }
+    }
+  },
+  {
+    "description":"this is post request with cookies",
+    "request":{
+      "uri":"/get/postWithCookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "username":"hello",
+        "address":"world"
+      }
+    },
+    "response":{
+      "status":"200",
+      "json":{
+        "status":"1",
+        "hello":"world"
+      }
+    }
+  }
+]

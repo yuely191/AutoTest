@@ -1,0 +1,52 @@
+[
+  {
+    "description":"这是一个会返回cookies的moco",
+    "request":{
+      "uri":"/getResponse",
+      "method":"get"
+    },
+    "response":{
+      "cookies":{
+        "login":"true"
+      },
+      "text":"this is a response with cookies"
+    }
+
+  },
+  {
+    "description":"这是一个请求需带着cookies的moco",
+    "request":{
+      "uri":"/getWithCookies",
+      "method":"get",
+      "cookies":{
+        "login":"true"
+      }
+    },
+    "response":{
+      "text":"request success"
+    }
+  },
+  {
+    "description":"this is a post request wiht cookies",
+    "request":{
+      "uri":"/getPostWithCookies",
+      "method":"post",
+      "cookies":{
+        "login":"true"
+      },
+      "json":{
+        "name":"zhangsan",
+        "age":"18"
+      }
+    },
+    "response":{
+      "status":200,
+      "json":{
+        "name":"zhangsan",
+        "age":"18",
+        "result":"success"
+      }
+    }
+  }
+
+]

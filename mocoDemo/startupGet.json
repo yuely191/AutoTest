@@ -1,0 +1,27 @@
+[
+  {
+    "description":"this is getMethod demo",
+    "request":{
+      "uri":"/getDemo",
+      "method":"get"
+    },
+    "response":{
+      "text":"getMethod without param"
+    }
+  },
+  {
+    "description":"this is getMethod with param",
+    "request":{
+      "uri":"/getWithParamDemo",
+      "method":"get",
+      "queries":{
+        "username":"zhangsan",
+        "password":"123"
+      }
+    },
+    "response":{
+      "text":"this is zhangsan 123"
+    }
+  }
+
+]

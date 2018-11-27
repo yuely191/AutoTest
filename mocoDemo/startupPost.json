@@ -1,0 +1,28 @@
+[
+  {
+    "description":"this is post request",
+    "request":{
+      "uri":"/postDemo",
+      "method":"post"
+    },
+    "response":{
+      "text":"this is postrequest"
+    }
+  },
+  {
+    "description":"this is post request with param",
+    "request": {
+      "uri": "/postMethodWithParma",
+      "method": "post",
+      "forms": {
+        "username": "zhangsan",
+        "sex": "man",
+        "age": "18"
+      }
+    },
+      "response":{
+        "text":"this is post with param"
+      }
+
+  }
+]

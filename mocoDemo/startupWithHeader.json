@@ -1,0 +1,23 @@
+[
+  {
+    "description":"this is a request with header",
+    "request":{
+      "uri":"/withHeader",
+      "method":"get",
+      "headers":{
+        "Content-type":"application/json"
+      },
+      "json":{
+        "login":"true",
+        "username":"wangwu"
+      }
+    },
+    "response":{
+      "status":"200",
+      "json":{
+        "status":"1",
+        "login":"success"
+      }
+    }
+  }
+]
